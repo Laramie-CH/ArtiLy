@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Literatura — ArtiLy</title>
+    <meta name="description" content="Explora la literatura: palabras que crean mundos y pensamientos." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-text">ArtiLy</span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+          <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+            <li><a href="poemas.html">Poemas</a></li>
+            <li><a href="formatos.html">Formatos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-image-section">
+        <div class="hero-image-container">
+          <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=1600&auto=format&fit=crop&q=80" alt="Literatura y libros" loading="eager" />
+          <div class="hero-image-overlay"></div>
+        </div>
+      </section>
+      <section class="hero" data-parallax>
+        <div class="container hero-inner">
+          <h1 class="hero-title">Literatura
+            <span class="accent">Palabras que abren universos</span>
+          </h1>
+          <p class="hero-sub">La literatura teje relatos, poemas y ensayos que amplían nuestra imaginación y reflexión.</p>
+          <div class="hero-cta">
+            <a href="#lecturas" class="btn primary">Lecturas</a>
+            <a href="galeria.html" class="btn ghost">Galería</a>
+          </div>
+        </div>
+        <div class="orbs" aria-hidden="true">
+          <span class="orb"></span>
+          <span class="orb"></span>
+          <span class="orb"></span>
+        </div>
+      </section>
+
+      <section class="container" style="padding: 40px 0;" id="info">
+        <div class="about-grid" style="margin-bottom: 50px;">
+          <div class="about-text" data-reveal>
+            <h2>Géneros y Movimientos</h2>
+            <p>La literatura abarca desde la épica de Homero hasta las novelas gráficas contemporáneas. Cada género —narrativa, poesía, teatro, ensayo— tiene su propia tradición y evolución. La narrativa ha evolucionado desde los mitos orales hasta las novelas experimentales, la poesía ha explorado desde formas métricas estrictas hasta el verso libre, el teatro ha combinado texto y representación desde la antigüedad, y el ensayo ha permitido la reflexión crítica sobre cualquier tema imaginable.</p>
+            <p>Los movimientos literarios reflejan las preocupaciones de cada época: el romanticismo exaltó la emoción y la naturaleza, el realismo retrató la sociedad con precisión documental, el modernismo experimentó con la forma y la conciencia, y la literatura posmoderna cuestiona las narrativas maestras y la autoridad del autor. Cada movimiento literario surge como respuesta a su contexto histórico, político y social, utilizando el lenguaje para explorar, cuestionar y transformar la realidad.</p>
+            <p>La literatura contemporánea se caracteriza por la diversidad de voces, la experimentación formal y la intersección con otros medios. Los escritores actuales exploran temas como la migración, la identidad, el cambio climático y la tecnología, mientras que las plataformas digitales han democratizado la publicación y permitido nuevas formas de narrativa interactiva. La literatura sigue siendo esencial para la comprensión humana, la empatía y la preservación de la memoria colectiva, adaptándose a los nuevos contextos mientras mantiene su poder para conmover, iluminar y transformar.</p>
+          </div>
+          <div class="about-media" data-reveal>
+            <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=1400&auto=format&fit=crop&q=60" alt="Géneros literarios" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="format-grid" style="margin-bottom: 50px;">
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Datos Curiosos</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">📚 El libro más vendido: La Biblia</li>
+                <li style="margin-bottom: 10px;">✍️ El Quijote tiene 381,104 palabras</li>
+                <li style="margin-bottom: 10px;">📖 La biblioteca más grande tiene 170 millones de libros</li>
+                <li style="margin-bottom: 10px;">🖋️ Shakespeare inventó 1,700 palabras</li>
+              </ul>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Géneros Principales</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">📖 Narrativa: Novela y cuento</li>
+                <li style="margin-bottom: 10px;">📝 Poesía: Verso y prosa poética</li>
+                <li style="margin-bottom: 10px;">🎭 Teatro: Drama y comedia</li>
+                <li style="margin-bottom: 10px;">📚 Ensayo: Reflexión y crítica</li>
+              </ul>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Escritores Destacados</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">🏆 Gabriel García Márquez</li>
+                <li style="margin-bottom: 10px;">🏆 Virginia Woolf</li>
+                <li style="margin-bottom: 10px;">🏆 Jorge Luis Borges</li>
+                <li style="margin-bottom: 10px;">🏆 Octavio Paz</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" style="padding: 28px 0 40px;" id="lecturas">
+        <div class="format-grid">
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=1400&auto=format&fit=crop&q=60" alt="Libros abiertos" loading="lazy" />
+            <div class="card-info">
+              <h3>Narrativa</h3>
+              <p>Ficción y no ficción que cuentan historias y vidas.</p>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=1400&auto=format&fit=crop&q=60" alt="Poesía escrita" loading="lazy" />
+            <div class="card-info">
+              <h3>Poesía</h3>
+              <p>Economía del lenguaje para intensificar sentidos y emociones.</p>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1400&auto=format&fit=crop&q=60" alt="Ensayo y notas" loading="lazy" />
+            <div class="card-info">
+              <h3>Ensayo</h3>
+              <p>Ideas que dialogan con el mundo desde la crítica y la filosofía.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+            <span class="brand-mark" aria-hidden="true">A</span>
+            <span class="brand-text">ArtiLy</span>
+          </a>
+          <p>© <span id="year"></span> ArtiLy. Todos los derechos reservados.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+          <li><a href="formatos.html">Formatos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  </html>
+
+

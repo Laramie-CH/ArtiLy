@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Música — ArtiLy</title>
+    <meta name="description" content="Explora la música: tiempo, ritmo y emoción en sonido." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-text">ArtiLy</span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+          <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+            <li><a href="poemas.html">Poemas</a></li>
+            <li><a href="formatos.html">Formatos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-image-section">
+        <div class="hero-image-container">
+          <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?w=1600&auto=format&fit=crop&q=80" alt="Música e instrumentos" loading="eager" />
+          <div class="hero-image-overlay"></div>
+        </div>
+      </section>
+      <section class="hero" data-parallax>
+        <div class="container hero-inner">
+          <h1 class="hero-title">Música
+            <span class="accent">Ritmo, armonía y melodía en movimiento</span>
+          </h1>
+          <p class="hero-sub">La música es el arte del tiempo: organiza el sonido para conmover, narrar y celebrar.</p>
+          <div class="hero-cta">
+            <a href="#audio" class="btn primary">Escuchar</a>
+            <a href="galeria.html" class="btn ghost">Galería</a>
+          </div>
+        </div>
+        <div class="orbs" aria-hidden="true">
+          <span class="orb"></span>
+          <span class="orb"></span>
+          <span class="orb"></span>
+        </div>
+      </section>
+
+      <section class="container" style="padding: 40px 0;" id="info">
+        <div class="about-grid" style="margin-bottom: 50px;">
+          <div class="about-text" data-reveal>
+            <h2>Géneros y Evolución</h2>
+            <p>La música ha evolucionado desde los cantos gregorianos hasta la música electrónica actual. Cada cultura ha desarrollado sus propios géneros y estilos, creando un rico tapiz sonoro global. La música clásica occidental estableció sistemas de notación y formas musicales complejas, mientras que las tradiciones musicales de África, Asia y América desarrollaron ritmos, escalas y técnicas vocales únicas que han influido en la música mundial contemporánea.</p>
+            <p>Desde el clásico hasta el jazz, el rock, el hip-hop y la música experimental, cada género refleja su época y contexto social. El jazz surgió de las comunidades afroamericanas, el rock and roll capturó la rebeldía juvenil, el hip-hop dio voz a las comunidades urbanas, y la música electrónica exploró las posibilidades de los sintetizadores y computadoras. La tecnología ha revolucionado la producción y distribución musical, permitiendo que cualquier persona pueda crear y compartir música globalmente.</p>
+            <p>La música contemporánea se caracteriza por la hibridación de géneros, la experimentación con sonidos y la democratización del acceso. Los artistas independientes pueden alcanzar audiencias globales sin intermediarios tradicionales, y los géneros se fusionan constantemente, creando nuevos estilos. La música sigue siendo una fuerza poderosa para la expresión cultural, la identidad y la conexión humana, adaptándose a los cambios tecnológicos y sociales mientras mantiene su capacidad de conmover y transformar.</p>
+          </div>
+          <div class="about-media" data-reveal>
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1400&auto=format&fit=crop&q=60" alt="Géneros musicales" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="format-grid" style="margin-bottom: 50px;">
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Datos Curiosos</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">🎵 La música activa todo el cerebro</li>
+                <li style="margin-bottom: 10px;">🎹 El piano tiene 88 teclas</li>
+                <li style="margin-bottom: 10px;">🎸 La guitarra más antigua tiene 3,500 años</li>
+                <li style="margin-bottom: 10px;">🎤 El karaoke se inventó en 1971</li>
+              </ul>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Instrumentos Principales</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">🎹 Cuerdas: Violín, guitarra, piano</li>
+                <li style="margin-bottom: 10px;">🎺 Viento: Flauta, trompeta, saxofón</li>
+                <li style="margin-bottom: 10px;">🥁 Percusión: Batería, tambor, xilófono</li>
+                <li style="margin-bottom: 10px;">🎛️ Electrónicos: Sintetizador, sampler</li>
+              </ul>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Compositores Destacados</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">🏆 Ludwig van Beethoven</li>
+                <li style="margin-bottom: 10px;">🏆 Wolfgang Amadeus Mozart</li>
+                <li style="margin-bottom: 10px;">🏆 Johann Sebastian Bach</li>
+                <li style="margin-bottom: 10px;">🏆 Igor Stravinsky</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" style="padding: 28px 0 40px;" id="audio">
+        <div class="format-grid">
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?w=1400&auto=format&fit=crop&q=60" alt="Instrumentos musicales" loading="lazy" />
+            <div class="card-info">
+              <h3>Instrumento</h3>
+              <p>Materia vibrante: cuerdas, viento, percusión y electrónica.</p>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <video class="card-video" src="https://cdn.coverr.co/videos/coverr-vinyl-3946/1080p.mp4" autoplay muted loop playsinline></video>
+            <div class="card-info">
+              <h3>Textura sonora</h3>
+              <p>Del susurro al estruendo: capas que envuelven.</p>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1400&auto=format&fit=crop&q=60" alt="Partitura musical" loading="lazy" />
+            <div class="card-info">
+              <h3>Composición</h3>
+              <p>Estructuras sonoras que ordenan ideas y emociones.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+            <span class="brand-mark" aria-hidden="true">A</span>
+            <span class="brand-text">ArtiLy</span>
+          </a>
+          <p>© <span id="year"></span> ArtiLy. Todos los derechos reservados.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+          <li><a href="formatos.html">Formatos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  </html>
+
+

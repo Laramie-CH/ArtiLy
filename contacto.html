@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto — ArtiLy</title>
+    <meta name="description" content="Contacta con ArtiLy para colaboraciones, consultas y más información." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-text">ArtiLy</span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+          <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+            <li><a href="poemas.html">Poemas</a></li>
+            <li><a href="formatos.html">Formatos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-image-section">
+        <div class="hero-image-container">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&auto=format&fit=crop&q=80" alt="Contacto y comunicación" loading="eager" />
+          <div class="hero-image-overlay"></div>
+        </div>
+      </section>
+      <section class="hero" data-parallax>
+        <div class="container hero-inner">
+          <h1 class="hero-title">Contacto
+            <span class="accent">Conectemos y colaboremos</span>
+          </h1>
+          <p class="hero-sub">Estamos aquí para escucharte. Ya sea para colaborar, hacer consultas o simplemente compartir tu pasión por el arte.</p>
+        </div>
+        <div class="orbs" aria-hidden="true">
+          <span class="orb"></span>
+          <span class="orb"></span>
+          <span class="orb"></span>
+        </div>
+      </section>
+
+      <section class="container" style="padding: 40px 0;">
+        <div class="contact-details-grid">
+          <div class="contact-main" data-reveal>
+            <div class="format-card glass" style="padding: 40px;">
+              <h2 style="margin-top: 0; margin-bottom: 24px;">Envíanos un mensaje</h2>
+              <form id="contactForm" class="contact-form">
+                <div style="margin-bottom: 20px;">
+                  <label for="contactName" style="display: block; margin-bottom: 8px; font-weight: 600;">Nombre *</label>
+                  <input type="text" id="contactName" name="name" required placeholder="Tu nombre" style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.2); background: var(--surface); color: var(--text); font-family: inherit;" />
+                </div>
+                <div style="margin-bottom: 20px;">
+                  <label for="contactEmail" style="display: block; margin-bottom: 8px; font-weight: 600;">Email *</label>
+                  <input type="email" id="contactEmail" name="email" required placeholder="tu@email.com" style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.2); background: var(--surface); color: var(--text); font-family: inherit;" />
+                </div>
+                <div style="margin-bottom: 20px;">
+                  <label for="contactSubject" style="display: block; margin-bottom: 8px; font-weight: 600;">Asunto *</label>
+                  <select id="contactSubject" name="subject" required style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.2); background: var(--surface); color: var(--text); font-family: inherit;">
+                    <option value="">Selecciona un asunto</option>
+                    <option value="colaboracion">Colaboración</option>
+                    <option value="consulta">Consulta general</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+                <div style="margin-bottom: 24px;">
+                  <label for="contactMessage" style="display: block; margin-bottom: 8px; font-weight: 600;">Mensaje *</label>
+                  <textarea id="contactMessage" name="message" rows="8" required placeholder="Escribe tu mensaje aquí..." style="width: 100%; padding: 14px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.2); background: var(--surface); color: var(--text); font-family: inherit; resize: vertical;"></textarea>
+                </div>
+                <button type="submit" class="btn primary" style="width: 100%; justify-content: center;">Enviar mensaje</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="contact-sidebar">
+            <div class="format-card glass" data-reveal style="margin-bottom: 24px; padding: 32px;">
+              <h3 style="margin-top: 0; margin-bottom: 20px;">Información de contacto</h3>
+              <div style="margin-bottom: 24px;">
+                <p style="margin: 0 0 8px; font-weight: 600; color: var(--primary);">Email</p>
+                <p style="margin: 0; color: var(--muted);">contacto@artily.com</p>
+              </div>
+              <div style="margin-bottom: 24px;">
+                <p style="margin: 0 0 8px; font-weight: 600; color: var(--primary);">Redes sociales</p>
+                <div style="display: flex; gap: 12px; margin-top: 8px;">
+                  <a href="#" style="color: var(--text); text-decoration: none; opacity: 0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">Instagram</a>
+                  <a href="#" style="color: var(--text); text-decoration: none; opacity: 0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">Twitter</a>
+                  <a href="#" style="color: var(--text); text-decoration: none; opacity: 0.8;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">Facebook</a>
+                </div>
+              </div>
+              <div>
+                <p style="margin: 0 0 8px; font-weight: 600; color: var(--primary);">Horario de atención</p>
+                <p style="margin: 0; color: var(--muted);">Lunes a Viernes<br>9:00 - 18:00</p>
+              </div>
+            </div>
+
+            <div class="format-card glass" data-reveal style="padding: 32px;">
+              <h3 style="margin-top: 0; margin-bottom: 16px;">¿Por qué contactarnos?</h3>
+              <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 12px; padding-left: 24px; position: relative;">
+                  <span style="position: absolute; left: 0;">✨</span>
+                  <strong style="display: block; margin-bottom: 4px;">Colaboraciones</strong>
+                  <span style="color: var(--muted); font-size: 0.9rem;">Trabajemos juntos en proyectos artísticos</span>
+                </li>
+                <li style="margin-bottom: 12px; padding-left: 24px; position: relative;">
+                  <span style="position: absolute; left: 0;">💡</span>
+                  <strong style="display: block; margin-bottom: 4px;">Sugerencias</strong>
+                  <span style="color: var(--muted); font-size: 0.9rem;">Comparte tus ideas para mejorar ArtiLy</span>
+                </li>
+                <li style="margin-bottom: 12px; padding-left: 24px; position: relative;">
+                  <span style="position: absolute; left: 0;">📧</span>
+                  <strong style="display: block; margin-bottom: 4px;">Newsletter</strong>
+                  <span style="color: var(--muted); font-size: 0.9rem;">Suscríbete para recibir novedades</span>
+                </li>
+                <li style="padding-left: 24px; position: relative;">
+                  <span style="position: absolute; left: 0;">❓</span>
+                  <strong style="display: block; margin-bottom: 4px;">Consultas</strong>
+                  <span style="color: var(--muted); font-size: 0.9rem;">Resolvemos tus dudas sobre el sitio</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+            <span class="brand-mark" aria-hidden="true">A</span>
+            <span class="brand-text">ArtiLy</span>
+          </a>
+          <p>© <span id="year"></span> ArtiLy. Todos los derechos reservados.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+          <li><a href="poemas.html">Poemas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('contactForm');
+        if (form) {
+          form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value;
+
+            // Simular envío (en producción esto iría a un servidor)
+            const messageEl = document.createElement('div');
+            messageEl.textContent = '¡Mensaje enviado! Te responderemos pronto.';
+            messageEl.style.cssText = 'position: fixed; top: 20px; right: 20px; background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; padding: 16px 24px; border-radius: 12px; box-shadow: var(--shadow); z-index: 1000; animation: slideIn 0.3s ease;';
+            document.body.appendChild(messageEl);
+            
+            form.reset();
+            
+            setTimeout(() => {
+              messageEl.style.animation = 'slideOut 0.3s ease';
+              setTimeout(() => messageEl.remove(), 300);
+            }, 3000);
+          });
+        }
+      });
+    </script>
+    <style>
+      @keyframes slideIn {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes slideOut {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(100%); opacity: 0; }
+      }
+      .contact-details-grid {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 32px;
+        margin-top: 40px;
+      }
+      .contact-sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      @media (max-width: 900px) {
+        .contact-details-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </body>
+</html>
+

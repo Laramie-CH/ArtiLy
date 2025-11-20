@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Poemas — ArtiLy</title>
+    <meta name="description" content="Comparte tus poemas de manera anónima en ArtiLy." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-text">ArtiLy</span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+          <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+            <li><a href="poemas.html" aria-current="page">Poemas</a></li>
+            <li><a href="formatos.html">Formatos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-image-section">
+        <div class="hero-image-container">
+          <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=1600&auto=format&fit=crop&q=80" alt="Poesía y escritura" loading="eager" />
+          <div class="hero-image-overlay"></div>
+        </div>
+      </section>
+      <section class="hero" data-parallax>
+        <div class="container hero-inner">
+          <h1 class="hero-title">Poemas
+            <span class="accent">Comparte tu voz, anónimamente</span>
+          </h1>
+          <p class="hero-sub">Un espacio para compartir tus poemas sin necesidad de registro. Tu creatividad, tu anonimato, tu expresión.</p>
+        </div>
+        <div class="orbs" aria-hidden="true">
+          <span class="orb"></span>
+          <span class="orb"></span>
+          <span class="orb"></span>
+        </div>
+      </section>
+
+      <section class="container" style="padding: 40px 0;">
+        <div class="poem-form-section" data-reveal>
+          <div class="format-card glass" style="max-width: 800px; margin: 0 auto;">
+            <div class="card-info" style="padding: 32px;">
+              <h2 style="margin-top: 0; margin-bottom: 20px;">Comparte tu poema</h2>
+              <form id="poemForm" class="poem-form">
+                <div style="margin-bottom: 20px;">
+                  <label for="poemTitle" style="display: block; margin-bottom: 8px; font-weight: 600;">Título (opcional)</label>
+                  <input type="text" id="poemTitle" name="title" placeholder="Sin título" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2); background: var(--surface); color: var(--text); font-family: inherit;" />
+                </div>
+                <div style="margin-bottom: 20px;">
+                  <label for="poemContent" style="display: block; margin-bottom: 8px; font-weight: 600;">Tu poema *</label>
+                  <textarea id="poemContent" name="content" rows="12" required placeholder="Escribe tu poema aquí..." style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2); background: var(--surface); color: var(--text); font-family: inherit; resize: vertical; line-height: 1.8;"></textarea>
+                </div>
+                <div style="margin-bottom: 20px;">
+                  <label for="poemAuthor" style="display: block; margin-bottom: 8px; font-weight: 600;">Autor (opcional, dejar vacío para anónimo)</label>
+                  <input type="text" id="poemAuthor" name="author" placeholder="Anónimo" style="width: 100%; padding: 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.2); background: var(--surface); color: var(--text); font-family: inherit;" />
+                </div>
+                <button type="submit" class="btn primary" style="width: 100%; justify-content: center;">Publicar poema</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="poems-gallery" style="margin-top: 60px;" data-reveal>
+          <header class="section-head">
+            <h2>Poemas compartidos</h2>
+            <p>Las palabras que otros han compartido</p>
+          </header>
+          <div id="poemsContainer" class="poems-container">
+            <!-- Los poemas se cargarán aquí dinámicamente -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+            <span class="brand-mark" aria-hidden="true">A</span>
+            <span class="brand-text">ArtiLy</span>
+          </a>
+          <p>© <span id="year"></span> ArtiLy. Todos los derechos reservados.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+          <li><a href="poemas.html">Poemas</a></li>
+          <li><a href="formatos.html">Formatos</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      // Funciones para manejar poemas
+      document.addEventListener('DOMContentLoaded', function() {
+        const STORAGE_KEY = 'artily-poems';
+        
+        // Cargar poemas desde localStorage
+        function loadPoems() {
+          try {
+            const poems = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+            return Array.isArray(poems) ? poems : [];
+          } catch (e) {
+            return [];
+          }
+        }
+
+        // Guardar poemas en localStorage
+        function savePoems(poems) {
+          try {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(poems));
+          } catch (e) {
+            console.error('Error guardando poemas:', e);
+          }
+        }
+
+        // Agregar nuevo poema
+        function addPoem(title, content, author) {
+          const poems = loadPoems();
+          const newPoem = {
+            id: Date.now(),
+            title: title || 'Sin título',
+            content: content,
+            author: author || 'Anónimo',
+            date: new Date().toLocaleDateString('es-ES', { 
+              year: 'numeric', 
+              month: 'long', 
+              day: 'numeric' 
+            })
+          };
+          poems.unshift(newPoem); // Agregar al inicio
+          savePoems(poems);
+          return newPoem;
+        }
+
+        // Renderizar poemas
+        function renderPoems() {
+          const container = document.getElementById('poemsContainer');
+          if (!container) return;
+          
+          const poems = loadPoems();
+          
+          if (poems.length === 0) {
+            container.innerHTML = `
+              <div class="format-card glass" style="text-align: center; padding: 40px;">
+                <p style="color: var(--muted); margin: 0;">Aún no hay poemas compartidos. Sé el primero en compartir tu poesía.</p>
+              </div>
+            `;
+            return;
+          }
+
+          container.innerHTML = poems.map(poem => `
+            <article class="poem-card glass" data-reveal>
+              <div class="poem-card-content">
+                <div class="poem-header">
+                  <h3>${escapeHtml(poem.title)}</h3>
+                  <div class="poem-meta">
+                    <span class="poem-author">${escapeHtml(poem.author)}</span>
+                    <span class="poem-date">${poem.date || 'Fecha no disponible'}</span>
+                  </div>
+                </div>
+                <div class="poem-text">${formatPoemText(poem.content)}</div>
+              </div>
+            </article>
+          `).join('');
+
+          // Activar reveal animations
+          const revealEls = container.querySelectorAll('[data-reveal]');
+          const io = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+              }
+            });
+          }, { threshold: 0.1 });
+          revealEls.forEach((el) => io.observe(el));
+        }
+
+        // Formatear texto del poema (preservar saltos de línea)
+        function formatPoemText(text) {
+          return escapeHtml(text).replace(/\n/g, '<br>');
+        }
+
+        // Escapar HTML para seguridad
+        function escapeHtml(text) {
+          if (!text) return '';
+          const div = document.createElement('div');
+          div.textContent = text;
+          return div.innerHTML;
+        }
+
+        // Manejar envío del formulario
+        const form = document.getElementById('poemForm');
+        if (form) {
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const title = document.getElementById('poemTitle').value.trim();
+            const content = document.getElementById('poemContent').value.trim();
+            const author = document.getElementById('poemAuthor').value.trim();
+
+            if (!content) {
+              alert('Por favor, escribe un poema antes de publicar.');
+              return;
+            }
+
+            addPoem(title, content, author);
+            form.reset();
+            renderPoems();
+            
+            // Mensaje de confirmación
+            const message = document.createElement('div');
+            message.textContent = '¡Poema publicado exitosamente!';
+            message.style.cssText = 'position: fixed; top: 20px; right: 20px; background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; padding: 16px 24px; border-radius: 12px; box-shadow: var(--shadow); z-index: 1000; animation: slideIn 0.3s ease;';
+            document.body.appendChild(message);
+            setTimeout(() => {
+              message.style.animation = 'slideOut 0.3s ease';
+              setTimeout(() => message.remove(), 300);
+            }, 3000);
+            
+            // Scroll suave hacia los poemas
+            setTimeout(() => {
+              const gallery = document.querySelector('.poems-gallery');
+              if (gallery) {
+                gallery.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }, 100);
+          });
+        }
+
+        // Cargar poemas al iniciar
+        renderPoems();
+      });
+    </script>
+    <style>
+      @keyframes slideIn {
+        from { transform: translateX(100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+      }
+      @keyframes slideOut {
+        from { transform: translateX(0); opacity: 1; }
+        to { transform: translateX(100%); opacity: 0; }
+      }
+    </style>
+  </body>
+</html>
+

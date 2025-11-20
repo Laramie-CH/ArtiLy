@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cine — ArtiLy</title>
+    <meta name="description" content="Explora el cine: imagen, tiempo y montaje en pantalla." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-text">ArtiLy</span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+          <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+            <li><a href="poemas.html">Poemas</a></li>
+            <li><a href="formatos.html">Formatos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-image-section">
+        <div class="hero-image-container">
+          <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1600&auto=format&fit=crop&q=80" alt="Cine y cinematografía" loading="eager" />
+          <div class="hero-image-overlay"></div>
+        </div>
+      </section>
+      <section class="hero" data-parallax>
+        <div class="container hero-inner">
+          <h1 class="hero-title">Cine
+            <span class="accent">Narrar con imágenes y silencio</span>
+          </h1>
+          <p class="hero-sub">El cine combina fotografía, música, actuación y montaje para crear experiencias inmersivas.</p>
+          <div class="hero-cta">
+            <a href="#escenas" class="btn primary">Escenas</a>
+            <a href="galeria.html" class="btn ghost">Galería</a>
+          </div>
+        </div>
+        <div class="orbs" aria-hidden="true">
+          <span class="orb"></span>
+          <span class="orb"></span>
+          <span class="orb"></span>
+        </div>
+      </section>
+
+      <section class="container" style="padding: 40px 0;" id="info">
+        <div class="about-grid" style="margin-bottom: 50px;">
+          <div class="about-text" data-reveal>
+            <h2>Historia y Evolución</h2>
+            <p>El cine nació en 1895 con los hermanos Lumière y ha evolucionado desde el cine mudo hasta el cine digital actual. Cada década ha aportado innovaciones técnicas y narrativas. Los primeros años del cine fueron de experimentación: desde las películas de un solo plano hasta el desarrollo del lenguaje cinematográfico con primeros planos, montaje y narrativa compleja. Directores como D.W. Griffith, Sergei Eisenstein y Charlie Chaplin establecieron las bases del arte cinematográfico.</p>
+            <p>El sonido revolucionó el cine en 1927, el color llegó en los años 30, el formato widescreen en los 50, y los efectos especiales han evolucionado desde maquetas hasta CGI. El cine independiente ha permitido voces alternativas y experimentación, mientras que las plataformas de streaming han democratizado el acceso y transformado los modelos de distribución. Cada innovación técnica ha abierto nuevas posibilidades narrativas y expresivas.</p>
+            <p>El cine contemporáneo se caracteriza por la diversidad de voces, la experimentación con formatos y la intersección con otros medios. Los directores actuales exploran temas globales, utilizan tecnología avanzada para crear mundos visuales impresionantes, y experimentan con narrativas no lineales y estructuras complejas. El cine sigue siendo una de las formas de arte más influyentes, capaz de reflejar, cuestionar y transformar la sociedad, mientras se adapta a los cambios tecnológicos y culturales del siglo XXI.</p>
+          </div>
+          <div class="about-media" data-reveal>
+            <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1400&auto=format&fit=crop&q=60" alt="Historia del cine" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="format-grid" style="margin-bottom: 50px;">
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Datos Curiosos</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">🎬 El primer filme duró 50 segundos</li>
+                <li style="margin-bottom: 10px;">🎥 Hollywood produce 500 películas al año</li>
+                <li style="margin-bottom: 10px;">🏆 El Oscar más antiguo data de 1929</li>
+                <li style="margin-bottom: 10px;">📽️ El cine mudo duró 35 años</li>
+              </ul>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Géneros Principales</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">🎭 Drama: Narrativas profundas</li>
+                <li style="margin-bottom: 10px;">😄 Comedia: Entretenimiento ligero</li>
+                <li style="margin-bottom: 10px;">🎬 Acción: Ritmo y emoción</li>
+                <li style="margin-bottom: 10px;">🎨 Documental: Realidad y verdad</li>
+              </ul>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Directores Destacados</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">🏆 Akira Kurosawa</li>
+                <li style="margin-bottom: 10px;">🏆 Stanley Kubrick</li>
+                <li style="margin-bottom: 10px;">🏆 Agnès Varda</li>
+                <li style="margin-bottom: 10px;">🏆 Christopher Nolan</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" style="padding: 28px 0 40px;" id="escenas">
+        <div class="format-grid">
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1400&auto=format&fit=crop&q=60" alt="Proyector de cine" loading="lazy" />
+            <div class="card-info">
+              <h3>Lenguaje</h3>
+              <p>Planos, encuadres y movimientos que construyen mirada.</p>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=1400&auto=format&fit=crop&q=60" alt="Sala de cine" loading="lazy" />
+            <div class="card-info">
+              <h3>Montaje</h3>
+              <p>El tiempo se moldea para crear ritmo y sentido.</p>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?w=1400&auto=format&fit=crop&q=60" alt="Rodaje cinematográfico" loading="lazy" />
+            <div class="card-info">
+              <h3>Producción</h3>
+              <p>Colaboración de oficios para llevar la historia a la pantalla.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+            <span class="brand-mark" aria-hidden="true">A</span>
+            <span class="brand-text">ArtiLy</span>
+          </a>
+          <p>© <span id="year"></span> ArtiLy. Todos los derechos reservados.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+          <li><a href="formatos.html">Formatos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  </html>
+
+

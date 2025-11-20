@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Escultura — ArtiLy</title>
+    <meta name="description" content="Explora la escultura: volumen, materia y presencia en el espacio." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-text">ArtiLy</span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+          <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+            <li><a href="poemas.html">Poemas</a></li>
+            <li><a href="formatos.html">Formatos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-image-section">
+        <div class="hero-image-container">
+          <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=1600&auto=format&fit=crop&q=80" alt="Escultura artística" loading="eager" />
+          <div class="hero-image-overlay"></div>
+        </div>
+      </section>
+      <section class="hero" data-parallax>
+        <div class="container hero-inner">
+          <h1 class="hero-title">Escultura
+            <span class="accent">Cuerpos y vacíos que invitan a rodear</span>
+          </h1>
+          <p class="hero-sub">La escultura utiliza materiales y volumen para activar el espacio y nuestra percepción táctil y visual.</p>
+          <div class="hero-cta">
+            <a href="#coleccion" class="btn primary">Colección</a>
+            <a href="galeria.html" class="btn ghost">Ver galería</a>
+          </div>
+        </div>
+        <div class="orbs" aria-hidden="true">
+          <span class="orb"></span>
+          <span class="orb"></span>
+          <span class="orb"></span>
+        </div>
+      </section>
+
+      <section class="container" style="padding: 40px 0;" id="info">
+        <div class="about-grid" style="margin-bottom: 50px;">
+          <div class="about-text" data-reveal>
+            <h2>Orígenes y Técnicas</h2>
+            <p>La escultura es una de las artes más antiguas, con ejemplos que datan de hace más de 30,000 años. Desde las venus paleolíticas hasta las instalaciones contemporáneas, ha evolucionado constantemente. Estas primeras esculturas, talladas en marfil, piedra o modeladas en arcilla, servían propósitos rituales, mágicos o decorativos, revelando las preocupaciones y creencias de las primeras comunidades humanas.</p>
+            <p>Las técnicas escultóricas incluyen el tallado (sustractivo), el modelado (aditivo), la fundición y el ensamblaje. Cada material —mármol, bronce, madera, acero— ofrece posibilidades expresivas únicas. El tallado requiere eliminar material para revelar la forma, mientras que el modelado permite construir la obra añadiendo material. La fundición permite reproducir obras en múltiples ejemplares, y el ensamblaje contemporáneo combina elementos diversos para crear nuevas narrativas tridimensionales.</p>
+            <p>La escultura contemporánea ha expandido los límites tradicionales del medio, incorporando nuevos materiales como plásticos, resinas, luces LED y elementos interactivos. Los escultores actuales exploran temas como la identidad, el medio ambiente, la tecnología y la memoria colectiva. Las instalaciones escultóricas transforman espacios completos, invitando al espectador a participar activamente en la experiencia artística, mientras que la escultura digital y la impresión 3D abren nuevas fronteras creativas.</p>
+          </div>
+          <div class="about-media" data-reveal>
+            <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=1400&auto=format&fit=crop&q=60" alt="Técnicas escultóricas" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="format-grid" style="margin-bottom: 50px;">
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Datos Curiosos</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">🗿 La escultura más antigua tiene 40,000 años</li>
+                <li style="margin-bottom: 10px;">⚡ Miguel Ángel esculpió el David en 3 años</li>
+                <li style="margin-bottom: 10px;">🌍 La escultura más alta mide 182 metros</li>
+                <li style="margin-bottom: 10px;">🎨 El mármol de Carrara es el más valorado</li>
+              </ul>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Materiales Principales</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">🪨 Piedra: Mármol, granito, caliza</li>
+                <li style="margin-bottom: 10px;">🔩 Metal: Bronce, hierro, acero</li>
+                <li style="margin-bottom: 10px;">🪵 Madera: Dura y blanda</li>
+                <li style="margin-bottom: 10px;">🧱 Arcilla: Terracota y cerámica</li>
+              </ul>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Escultores Destacados</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">🏆 Miguel Ángel</li>
+                <li style="margin-bottom: 10px;">🏆 Auguste Rodin</li>
+                <li style="margin-bottom: 10px;">🏆 Louise Bourgeois</li>
+                <li style="margin-bottom: 10px;">🏆 Anish Kapoor</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" style="padding: 28px 0 40px;" id="coleccion">
+        <div class="format-grid">
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=1400&auto=format&fit=crop&q=60" alt="Escultura moderna" loading="lazy" />
+            <div class="card-info">
+              <h3>Materia</h3>
+              <p>Piedra, metal, madera o resinas como lenguajes expresivos.</p>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=1400&auto=format&fit=crop&q=60" alt="Detalle de textura" loading="lazy" />
+            <div class="card-info">
+              <h3>Textura</h3>
+              <p>Superficies que dialogan con la luz y el tacto.</p>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1400&auto=format&fit=crop&q=60" alt="Instalación escultórica" loading="lazy" />
+            <div class="card-info">
+              <h3>Instalación</h3>
+              <p>Obras que expanden sus límites e integran al espectador.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+            <span class="brand-mark" aria-hidden="true">A</span>
+            <span class="brand-text">ArtiLy</span>
+          </a>
+          <p>© <span id="year"></span> ArtiLy. Todos los derechos reservados.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+          <li><a href="formatos.html">Formatos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  </html>
+
+

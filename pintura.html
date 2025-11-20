@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pintura — ArtiLy</title>
+    <meta name="description" content="Explora la pintura: color, gesto y composición sobre el lienzo." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span class="brand-text">ArtiLy</span>
+        </a>
+        <nav class="nav" aria-label="Principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+          <ul id="menu" class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+            <li><a href="poemas.html">Poemas</a></li>
+            <li><a href="formatos.html">Formatos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Cambiar tema">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-image-section">
+        <div class="hero-image-container">
+          <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=1600&auto=format&fit=crop&q=80" alt="Pintura artística" loading="eager" />
+          <div class="hero-image-overlay"></div>
+        </div>
+      </section>
+      <section class="hero" data-parallax>
+        <div class="container hero-inner">
+          <h1 class="hero-title">Pintura
+            <span class="accent">Pigmento, gesto y ritmo visual</span>
+          </h1>
+          <p class="hero-sub">La pintura explora el color y la materia para construir atmósferas y narrativas sobre superficies.</p>
+          <div class="hero-cta">
+            <a href="#obras" class="btn primary">Obras</a>
+            <a href="formatos.html" class="btn ghost">Ver formatos</a>
+          </div>
+        </div>
+        <div class="orbs" aria-hidden="true">
+          <span class="orb"></span>
+          <span class="orb"></span>
+          <span class="orb"></span>
+        </div>
+      </section>
+
+      <section class="container" style="padding: 40px 0;" id="info">
+        <div class="about-grid" style="margin-bottom: 50px;">
+          <div class="about-text" data-reveal>
+            <h2>Movimientos y Estilos</h2>
+            <p>La pintura ha sido testigo de innumerables movimientos artísticos: desde el realismo renacentista hasta el expresionismo abstracto. Cada movimiento refleja las preocupaciones de su época. El Renacimiento recuperó la perspectiva y el estudio del cuerpo humano, el Barroco exploró el drama y la emoción, y el Romanticismo exaltó la naturaleza y los sentimientos individuales. Cada época ha encontrado en la pintura un medio para expresar su visión del mundo.</p>
+            <p>El impresionismo capturó la luz y el instante, el cubismo fragmentó la realidad desde múltiples perspectivas, el surrealismo exploró el subconsciente y los sueños, y el arte contemporáneo desafía los límites tradicionales del medio. El expresionismo abstracto liberó el gesto y la emoción pura, el pop art incorporó la cultura de masas, y el arte conceptual priorizó la idea sobre la ejecución técnica. Cada movimiento ha contribuido a expandir las posibilidades expresivas de la pintura.</p>
+            <p>En la actualidad, la pintura coexiste con medios digitales, fotografía y arte conceptual. Los pintores contemporáneos combinan técnicas tradicionales con nuevos materiales y tecnologías, explorando temas como la globalización, la identidad, la ecología y la intersección entre lo físico y lo digital. La pintura sigue siendo un medio vital para la expresión artística, adaptándose y evolucionando con cada generación de artistas.</p>
+          </div>
+          <div class="about-media" data-reveal>
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1400&auto=format&fit=crop&q=60" alt="Movimientos pictóricos" loading="lazy" />
+          </div>
+        </div>
+
+        <div class="format-grid" style="margin-bottom: 50px;">
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Datos Curiosos</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">🎨 La pintura más cara se vendió por $450 millones</li>
+                <li style="margin-bottom: 10px;">🖼️ La Mona Lisa tiene su propia sala en el Louvre</li>
+                <li style="margin-bottom: 10px;">🌻 Van Gogh vendió solo 1 cuadro en vida</li>
+                <li style="margin-bottom: 10px;">🖌️ El óleo se inventó en el siglo XV</li>
+              </ul>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Técnicas Principales</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">🖼️ Óleo: Durabilidad y versatilidad</li>
+                <li style="margin-bottom: 10px;">💧 Acuarela: Transparencia y fluidez</li>
+                <li style="margin-bottom: 10px;">🎨 Acrílico: Secado rápido y moderno</li>
+                <li style="margin-bottom: 10px;">🖌️ Fresco: Técnica mural antigua</li>
+              </ul>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <div class="card-info" style="padding: 24px;">
+              <h3>Pintores Destacados</h3>
+              <ul style="list-style: none; padding: 0; margin: 12px 0 0;">
+                <li style="margin-bottom: 10px;">🏆 Leonardo da Vinci</li>
+                <li style="margin-bottom: 10px;">🏆 Pablo Picasso</li>
+                <li style="margin-bottom: 10px;">🏆 Frida Kahlo</li>
+                <li style="margin-bottom: 10px;">🏆 Jackson Pollock</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" style="padding: 28px 0 40px;" id="obras">
+        <div class="format-grid">
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?w=1400&auto=format&fit=crop&q=60" alt="Pintura abstracta colorida" loading="lazy" />
+            <div class="card-info">
+              <h3>Color</h3>
+              <p>Paletas y contrastes que despiertan emociones.</p>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1400&auto=format&fit=crop&q=60" alt="Texturas pictóricas" loading="lazy" />
+            <div class="card-info">
+              <h3>Materia</h3>
+              <p>Texturas, veladuras y capas que generan profundidad.</p>
+            </div>
+          </article>
+          <article class="format-card glass" data-reveal>
+            <img src="https://images.unsplash.com/photo-1470768325516-4aa1d003bd3a?w=1400&auto=format&fit=crop&q=60" alt="Composición pictórica" loading="lazy" />
+            <div class="card-info">
+              <h3>Composición</h3>
+              <p>Equilibrio y tensión que ordenan la mirada.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="brand" href="index.html#inicio" aria-label="Ir al inicio">
+            <span class="brand-mark" aria-hidden="true">A</span>
+            <span class="brand-text">ArtiLy</span>
+          </a>
+          <p>© <span id="year"></span> ArtiLy. Todos los derechos reservados.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="7tipos.html">7 Tipos de Arte</a></li>
+          <li><a href="formatos.html">Formatos</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  </html>
+
+
